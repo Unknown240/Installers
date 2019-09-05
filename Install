@@ -1,0 +1,153 @@
+#!/system/xbin/bash
+#!/system/xbin/botbrew
+clear
+
+spinner() {
+    local i sp n
+    sp='/-\|'
+    n=${#sp}
+    printf ' '
+    while sleep 0.1; do
+        printf "%s\b" "${sp:i++%n:1}"
+    done
+}
+
+printf ' Waiting '
+spinner &
+
+sleep 1  # sleeping for 1 seconds is important work
+
+kill "$!" # kill the spinner
+printf '\n'
+
+clear
+
+
+echo " 
+╔╦╗╔═╗╔═╗╔╦╗  ╔═╗╔╦╗╦╦  ╔═╗
+ ║ ║╣ ╠═╣║║║  ╚═╗║║║║║  ║╣ 
+ ╩ ╚═╝╩ ╩╩ ╩  ╚═╝╩ ╩╩╩═╝╚═╝ " | lolcat
+date
+echo "_______________________________________"
+echo " "
+echo " Authors & Mod : Unknown240           "|lolcat
+echo "_______________________________________"
+
+###################################################
+# CTRL + C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+echo -e $red"[#]> [Ctrl + C] Trying To Exit ... "
+echo -e $cyan"[#]> EXIT"
+clear
+exit
+}
+echo " "
+echo " READY FOR INSTALL?? (y/n)"
+read mrrm
+if [ $mrrm = y ] || [ $mrrm = Y ]
+then
+clear
+echo " [!] Start the download process " | lolcat
+sleep 5
+echo " [!] DON'T TURN OFF YOUR DEVICE !! " | lolcat
+sleep 2
+apt update
+apt upgrade
+apt install php
+apt install python
+apt install python2
+apt-get -y install python
+apt-get -y install php
+apt-get -y install wget
+apt-get -y install unzip
+apt-get -y install ssh
+apt-get -y install unzip
+apt-get install p7zip
+apt install ruby
+pkg install p7zip
+gem install lolcat
+apt install termux-api
+pip install requests
+pip2 install requests
+pip install colorama
+pip2 install colorama
+apt-get update && upgrade -y
+pkg update && pkg upgrade
+apt-get install python2 -y
+apt-get install toilet -y
+apt-get install php -y
+#language
+apt install python -y
+apt install python2 -y
+apt install perl -y
+apt install c -y
+apt install c++ -y
+#common pkg
+apt install git -y
+apt install nano -y
+apt install vim -y
+apt install wget -y
+apt install curl -y
+apt install zip -y
+apt install unzip -y
+apt install tar -y
+apt install rar -y
+apt install unrar -y
+apt install less -y
+#testing tools
+apt install nmap -y
+apt install hydra -y
+apt-get install figlet
+apt-get install clang 
+apt-get install cowsay
+apt-get install git -y
+apt-get install curl -y
+apt-get install openssh -y
+pkg install python2
+pkg install dialog
+pip2 install requests
+pip install --upgrade pip
+pip install colorama
+pip2 install mechanize
+pkg install ruby
+gem install lolcat
+pkg install python
+pkg install python2
+pkg install nano
+pip install --upgrade pip
+pkg install curl
+pkg install wget
+pkg install php
+pkg install perl
+pkg install ruby
+apt install figlet
+apt install toilet
+apt install cowsay
+apt install nodejs
+
+
+sleep 5
+echo " [+] Download Complete "
+sleep 3
+
+echo -e " Installation Succesful [DONE!]" | lolcat
+echo "|-------------------------------------------------------------|"
+echo -e " Channel Telegram @Unknown240" | lolcat
+echo "|-------------------------------------------------------------|"
+echo " "
+sleep 5
+echo "Authors By : Clvnfrlnsyh" | lolcat
+clear
+exit
+fi
+
+if [ $mrrm = N ] || [ $mrrm = n ]
+then
+echo " "
+echo " ~~ Exit ~~ "
+echo " Authors : Unknown240 " | lolcat
+clear
+exit
+fi

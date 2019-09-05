@@ -8,3 +8,11 @@ This tool will install modules, packages and others needed for Linux (Termux)
 
 #### (Indonesia) ####
 Tools ini akan menginstall module,package dan yang lainnya yang dibutuhkan untuk Linux ( Termux )
+
+# Usage
+" bash install "
+
+# Recommended
+- Termux 
+
+You can try on another distro linux
